@@ -1,0 +1,64 @@
+body {
+    background-color: #6800f0;
+    color: rgb(248, 232, 10);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  .main-heading {
+    text-align: center;
+  }
+  
+  #facts-section h2,
+  #quotes-section h2,
+  #links-section h2 {
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .quote {
+    font-style: italic;
+  }
+
+  main img {
+    max-width: 400px;
+    width: .0005;
+    height:.0005;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 6px;
+    text-align: left;
+    border: 3px solid black;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    text-decoration: underline;
+  }
+  
+  .bold-row th {
+    font-weight: bold;
+  }
+  
+  .small-cell {
+    font-size: 14px;
+  }
+  .quote {
+    font-style: italic;
+  }
+  

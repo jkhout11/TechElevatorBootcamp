@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+}
+nav ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00AFEF;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+header img {
+    height: 100px;
+    width: auto;
+}
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+main img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 350px;
+    width: 35%;
+}
+main li:before {
+    content: ':dango:';
+    margin-left: -31px;
+    padding-right: 8px;
+}
+main, section, footer {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+}
+.store-button { /* used for store link in "Get refreshed" section */
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00AFEF;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*ADDED later*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                "header nav"
+                "main main"
+                "section1 section2"
+                "footer footer" ;
+    gap: 1%;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+}
+#signup-add{
+    grid-area: section1;
+}
+#summer-add{
+    grid-area: section2;
+}
+footer{
+    grid-area: footer;
+}
+nav ul{
+    display: flex;
+   justify-content: space-evenly;
+}
+nav li{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav li>a{
+    color: black;
+    text-decoration: none;
+}
+header, #signup-add, #summer-add{
+    display: flex;
+}
+#signup-add div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#summer-add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none ;
+}
+.popsicle{
+    flex-basis: 100%;
+}
+@media screen and (max-width:480px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "section1"
+                    "section2"
+                    "footer" ;
+        gap: 1%;
+    }
+    main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+    }
+}
+/* Contact Us Styles*/
+#contact-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                "header nav"
+                "main main"
+                "footer footer" ;
+    gap: 1%;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.label-style{
+    margin: 5px;
+}
+.input-style{
+    margin-bottom: 10px;
+}
+#favorite{
+    width: auto;
+}
+#comments{
+    border: 1px solid rgb(118, 118, 118) ;
+}
+@media screen and (max-width:480px) {
+    #contact-body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "footer" ;
+        gap: 1%;
+    }
+    main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-style{
+        margin-bottom: 10px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+}

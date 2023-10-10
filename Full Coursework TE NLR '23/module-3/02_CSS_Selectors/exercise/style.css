@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 173, 238, 0.4);
+}
+
+aside img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
+
+header img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+main img.banner {
+  width: 100vw;
+  max-width: 100%;
+}
+
+main {
+  margin-left: 220px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+
+nav li {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+nav li:first-child {
+  text-decoration: underline #00adee;
+}
+
+nav li a {
+  font-weight: bold;
+  color: #00adee;
+  text-decoration: none;
+}
+
+nav li:not(:first-child) a {
+  text-decoration: none;
+}
+
+nav li:not(:first-child) {
+  border-top: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section div {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #8CC36F;
+}
+
+section h2 i {
+  margin-right: 5px;
+}
+
+section div:nth-child(2),
+section div:nth-child(3) {
+  border-left: 1px solid rgba(170, 239, 135, 0.8);
+}
+
+section div p {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,52 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ff0404;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  .section-heading {
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .submit-group {
+    text-align: center;
+  }
+  

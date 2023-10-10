@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+    <link rel="stylesheet" href="css/infostyles.css">
+</head>
+<body>
+    
+    <main>
+        <h2 class="section-heading">Information Form</h2>
+        <form method="POST" action="https://techelevate/submit">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth">
+              </div>
+              <div class="form-group">
+                <label for="favorite-color">Favorite Color:</label>
+                <input type="text" id="favorite-color" name="favorite-color">
+              </div>
+              <div class="form-group">
+                <label for="lucky-number">Lucky Number:</label>
+                <input type="number" id="lucky-number" name="lucky-number">
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="confirmation" name="confirmation">
+                <label for="confirmation">Confirm Data is Correct:</label>
+              </div>
+              <div class="submit-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </main>
+</body>
+</html>

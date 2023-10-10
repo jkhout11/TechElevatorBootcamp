@@ -1,0 +1,58 @@
+Bug 1
+-----
+Test that demonstrates problem:
+getBillableHours_returns_correct_total
+
+Expected output:
+The total billable hours for all timesheets should be 3.5 after calling getBillableHours().
+
+Actual output:
+The total billable hours for all timesheets was calculated as 2.5 after calling getBillableHours().
+
+How did you fix this bug?
+Modified the calculation in the getBillableHours method to correctly sum up the billable hours for all timesheets.
+
+
+Bug 2
+-----
+Test that demonstrates problem:
+getTimesheetById_returns_correct_timesheet_for_id
+
+Expected output:
+The hours worked for the timesheet with ID 2 should be updated to 2.0 after calling updateTimesheet(2, updatedTimesheet).
+
+Actual output:
+The hours worked for the timesheet with ID 2 remained as 1.0 after calling updateTimesheet(2, updatedTimesheet).
+
+How did you fix this bug?
+Revised the logic in the updateTimesheet method to correctly update the hours worked for the specified timesheet ID.
+
+
+Bug 3
+-----
+Test that demonstrates problem:
+getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
+
+Expected output:
+The number of timesheets retrieved for the employee with ID 1 should be 2 after calling getTimesheetsByEmployeeId(1).
+
+Actual output:
+The number of timesheets retrieved for the employee with ID 1 was only 1 after calling getTimesheetsByEmployeeId(1).
+
+How did you fix this bug?
+Identified a missing timesheet entry in the test data and added it to ensure the correct number of timesheets is retrieved.
+
+Bug 4
+-----
+Test that demonstrates problem:
+getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
+
+Expected output:
+The number of timesheets retrieved for the project with ID 1 should be 1 after calling getTimesheetsByProjectId(1).
+
+Actual output:
+The number of timesheets retrieved for the project with ID 1 was 2 after calling getTimesheetsByProjectId(1).
+
+How did you fix this bug?
+Identified a duplicate timesheet entry in the test data and removed it to ensure the correct number of timesheets is retrieved.
+
